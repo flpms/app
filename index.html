@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" type="text/css" href="css/style-holmes-icon.css" />
+		<link rel="stylesheet" type="text/css" href="css/durusans.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/index-mobile.css" media="print (max-width: )"/>
+		<title>Holmes</title>
+		<!--<script type="text/javascript" src="cordova.js"></script>-->
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<div class="" id="control">
+			<header>
+				<h1><span class="icon-holmes"></span> Holmes</h1>
+				<div id="btnShowMenu"><span class="glyphicon glyphicon-tasks"></span></div>
+			</header>
+			<nav id="mainNav">
+				<ul>
+					<li id="search">Pesquisar</li>
+					<li id="awards">Awards</li>
+					<li id="history">Histórico</li>
+					<li id="settings">Configurações</li>
+				</ul>
+			</nav>
+			<div id="content">
+				<div id="Login">
+					<h5>Login</h5>
+					<button id="close">close</button>
+					<form>
+						<div class="box box-height27 box-100">
+							<input type="text" placeholder="E-mail" />
+						</div>
+						<div class="box box-height27 box-100">
+							<input type="password" placeholder="Senha"/>
+						</div>
+						<div class="">
+						</div>
+					</form>
+					<div class="box box-height44 box-100">
+						<button type="button" id="facebookLogin">Login com Facebook</button>
+					</div>
+					<div class="box box-height44 box-100">
+						<button type="button" id="twitterLogin">Login com Twitter</button>
+					</div>
+					<div class="box box-height44 box-100">
+						<button type="button" id="plusLogin">Login com Google</button>
+					</div>
+				</div>
+				<div id="content-search">
+					<form action="" method="post">
+						<div class="box box-height44 box-100">
+							<input type="text" id="query" placeholder="Qual produto procura..."/>
+						</div>
+						<div class="box box-height44 box-100">
+							<label>Ativar o Holmes</label>&nbsp;<input type="checkbox" id="activeHolmes"/>
+						</div>
+						<div id="Holmes">
+							<div class="box box-height27 box-100">
+								<label>Pesquisar até:</label> <input type="date" />
+							</div>
+							<div class="box box-height27 box-100">
+								<label>Receber Notificações</label> <input type="radio" />
+							</div>
+						</div>
+						<div class="box box-height44 box-100">
+							<button id="btnSearch" type="submit">Buscar</button>
+						</div>
+					</form>
+				</div>
+				<div id="content-awards"><p>Em breve, continue buscando</p></div>
+				<div id="content-history"></div>
+				<div id="content-settings">
+					<p>Ainda não pode mudar seu e-mail</p>
+					<button>Não vai excluir a conta</button>
+					<p>O Botão não funciona</p>
+				</div>
+			</div>
+		</div>
+		<!--<script type="text/javascript" src="phonegap.js"></script> -->
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
